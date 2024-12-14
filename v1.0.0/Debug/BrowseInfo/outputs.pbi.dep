@@ -1,0 +1,46 @@
+D:\WORK_2024\!Peleng_Test\v1.0.0\Debug\BrowseInfo\outputs.pbi: \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\outputs_defines.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\service.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\pins.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\settings.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\DLib_Product_string.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\ysizet.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\string.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\misc.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\stm32f10x_conf.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\aarch32\iccarm_builtin.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\CMSIS\Core\Include\cmsis_iccarm.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\CMSIS\Core\Include\cmsis_compiler.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\CMSIS\Core\Include\cmsis_version.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\inc\c\stdint.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.2_2\arm\CMSIS\Core\Include\core_cm3.h \
+  D:\WORK_2024\!Peleng_Test\v1.0.0\outputs.c
