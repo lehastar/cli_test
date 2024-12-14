@@ -1,4 +1,4 @@
-//settings.h
+п»ї//settings.h
 
 #if !defined( SETTINGS_H )
 #define       SETTINGS_H
@@ -11,11 +11,11 @@
 //#define DEBUG_OUT_ON          1
 
 //*********************************************************
-//ВЕРСИЯ ПРОГРАММЫ
+//Р’Р•Р РЎРРЇ РџР РћР“Р РђРњРњР«
 //*********************************************************
-#define  DEVICE_TYPE          0x41 	//Контроллер СКАТ
-#define  DEVICE_VERSION       1    	//Версия
-#define  DEVICE_SUBVERSION    0  	  //Субверсия
+#define  DEVICE_TYPE          0x41 	//РљРѕРЅС‚СЂРѕР»Р»РµСЂ РЎРљРђРў
+#define  DEVICE_VERSION       1    	//Р’РµСЂСЃРёСЏ
+#define  DEVICE_SUBVERSION    0  	  //РЎСѓР±РІРµСЂСЃРёСЏ
 
 //*********************************************************
 //SYSYEM
@@ -39,7 +39,7 @@
 #define CRC_DB_INI_VAL        0xFFFFFFFFul
 
 //*********************************************************
-//Тип идентификатора
+//РўРёРї РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР°
 //*********************************************************
 #define IDENT_TYPE_CARD                 1
 #define IDENT_TYPE_PIN                  2
@@ -72,9 +72,9 @@ typedef union ux64
   u8_t value8[8];
 }ux64_t;
 
-#define GLOBAL_CARD_LEN       8         //Длинна кода карты
+#define GLOBAL_CARD_LEN       8         //Р”Р»РёРЅРЅР° РєРѕРґР° РєР°СЂС‚С‹
 
-//Окружение считывателя
+//РћРєСЂСѓР¶РµРЅРёРµ СЃС‡РёС‚С‹РІР°С‚РµР»СЏ
 typedef struct key_data
 {
   u8_t code[GLOBAL_CARD_LEN];

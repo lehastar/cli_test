@@ -1,4 +1,4 @@
-//core.c
+п»ї//core.c
 
 #include "stm32f10x.h"
 #include "stm32f10x_conf.h"
@@ -33,20 +33,20 @@
 core_t core;
 u8_t VIRTUAL_EEPROM[VIRTUAL_EEPROM_SIZE];
 
-//Команды в SMS
+//РљРѕРјР°РЅРґС‹ РІ SMS
 const CLISig_t CLICmdSig[CLI_CMD_NUM] = 
 {
   {//1
-    "eeprom -w -a"                    //“Запись ячейки”
+    "eeprom -w -a"                    //вЂњР—Р°РїРёСЃСЊ СЏС‡РµР№РєРёвЂќ
   },
   {//2
-    "eeprom -r -a"                    //“Чтение ячейки”
+    "eeprom -r -a"                    //вЂњР§С‚РµРЅРёРµ СЏС‡РµР№РєРёвЂќ
   },
   {//3
-    "eeprom -e -a"                    //“Стирание ячейки”
+    "eeprom -e -a"                    //вЂњРЎС‚РёСЂР°РЅРёРµ СЏС‡РµР№РєРёвЂќ
   },
   {//4
-    "eeprom -d"                       //“Дамп всех ячеек”
+    "eeprom -d"                       //вЂњР”Р°РјРї РІСЃРµС… СЏС‡РµРµРєвЂќ
   }
 };
 
@@ -58,7 +58,7 @@ u8_t Resive_Paket(void);
 u8_t Get_CLI_CMD(CLICmd_t *CLIcmd, u8_t *buf, u8_t len);
 
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::
-// Коррекция таймеров
+// РљРѕСЂСЂРµРєС†РёСЏ С‚Р°Р№РјРµСЂРѕРІ
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::
 void Correct_Core_Timers(void)
 {
@@ -66,7 +66,7 @@ void Correct_Core_Timers(void)
 }
 
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::
-// Прием и декодирование пакета
+// РџСЂРёРµРј Рё РґРµРєРѕРґРёСЂРѕРІР°РЅРёРµ РїР°РєРµС‚Р°
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::
 u8_t Is_Dig(u8_t b)
 {
@@ -99,9 +99,9 @@ u8_t Get_CLI_CMD(CLICmd_t *CLIcmd, u8_t *buf, u8_t len)
   i = 0;
   do
   {
-    n = strlen((const char*)CLICmdSig[i].str);//Длина шаблона
+    n = strlen((const char*)CLICmdSig[i].str);//Р”Р»РёРЅР° С€Р°Р±Р»РѕРЅР°
     //
-    if(memcmp((u8_t*)&buf[0], //Сравним с шаблоном
+    if(memcmp((u8_t*)&buf[0], //РЎСЂР°РІРЅРёРј СЃ С€Р°Р±Р»РѕРЅРѕРј
               (u8_t*)&CLICmdSig[i].str[0], 
               n) == 0) {
       //
@@ -110,20 +110,20 @@ u8_t Get_CLI_CMD(CLICmd_t *CLIcmd, u8_t *buf, u8_t len)
       }
       //
       switch(i) {
-      //Команда
-      case CLI_CMD_D://Команда вывести дамп
+      //РљРѕРјР°РЅРґР°
+      case CLI_CMD_D://РљРѕРјР°РЅРґР° РІС‹РІРµСЃС‚Рё РґР°РјРї
         CLIcmd->cmd = i;
         return 1;
-      case CLI_CMD_R://Команда чтения
-      case CLI_CMD_E://Команда стереть
-      case CLI_CMD_W://Команда записать
+      case CLI_CMD_R://РљРѕРјР°РЅРґР° С‡С‚РµРЅРёСЏ
+      case CLI_CMD_E://РљРѕРјР°РЅРґР° СЃС‚РµСЂРµС‚СЊ
+      case CLI_CMD_W://РљРѕРјР°РЅРґР° Р·Р°РїРёСЃР°С‚СЊ
         CLIcmd->cmd = i;
         bufx.value32 = 0;
         n++;
         bufx.value8[0] = buf[n++];
         bufx.value8[1] = buf[n++];
         bufx.value8[2] = buf[n++];
-        if( (b = atoi((const char*)&bufx.value8[0])) >= VIRTUAL_EEPROM_SIZE ){//Выделим значение адреса
+        if( (b = atoi((const char*)&bufx.value8[0])) >= VIRTUAL_EEPROM_SIZE ){//Р’С‹РґРµР»РёРј Р·РЅР°С‡РµРЅРёРµ Р°РґСЂРµСЃР°
           return 0;
         }
         CLIcmd->addr = b;
@@ -137,7 +137,7 @@ u8_t Get_CLI_CMD(CLICmd_t *CLIcmd, u8_t *buf, u8_t len)
               bufx.value8[0] = buf[j++];
               bufx.value8[1] = buf[j++];
               bufx.value8[2] = buf[j++];
-              b = atoi((const char*)&bufx.value8[0]);//Выделим значение данных
+              b = atoi((const char*)&bufx.value8[0]);//Р’С‹РґРµР»РёРј Р·РЅР°С‡РµРЅРёРµ РґР°РЅРЅС‹С…
               if(b > 255){
                 return 0;
               }
@@ -161,7 +161,7 @@ u8_t Get_CLI_CMD(CLICmd_t *CLIcmd, u8_t *buf, u8_t len)
 }
   
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::
-// Прием и декодирование пакета
+// РџСЂРёРµРј Рё РґРµРєРѕРґРёСЂРѕРІР°РЅРёРµ РїР°РєРµС‚Р°
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::
 u8_t Resive_Paket(void)
 {
@@ -177,10 +177,10 @@ u8_t Resive_Paket(void)
     }
   }
 
-  //Проверка - не пришло ли чего в буфер
-  if(USART2_DataInReceiveBuffer() != 0)             //Если в буфере что-то есть
+  //РџСЂРѕРІРµСЂРєР° - РЅРµ РїСЂРёС€Р»Рѕ Р»Рё С‡РµРіРѕ РІ Р±СѓС„РµСЂ
+  if(USART2_DataInReceiveBuffer() != 0)             //Р•СЃР»Рё РІ Р±СѓС„РµСЂРµ С‡С‚Рѕ-С‚Рѕ РµСЃС‚СЊ
   {
-    rx_byte = USART2_Receive();                     //Примем байта из буфера
+    rx_byte = USART2_Receive();                     //РџСЂРёРјРµРј Р±Р°Р№С‚Р° РёР· Р±СѓС„РµСЂР°
 
     //
     switch(core.buf_counter) {
@@ -207,9 +207,9 @@ u8_t Resive_Paket(void)
             return 0;
           }
 
-          //Команда
+          //РљРѕРјР°РЅРґР°
           switch(core.CLICmd.cmd) {
-          case CLI_CMD_D://Команда вывести дамп
+          case CLI_CMD_D://РљРѕРјР°РЅРґР° РІС‹РІРµСЃС‚Рё РґР°РјРї
             i = 0;
             do
             {

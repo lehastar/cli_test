@@ -1,4 +1,4 @@
-//core_defines.h
+п»ї//core_defines.h
 
 #if !defined( CORE_DEFINES_H )
 #define       CORE_DEFINES_H
@@ -18,16 +18,16 @@
 #define CORE_BUF_SIZE       256
 
 //
-#define PACK_FLAG_RX_TIMEOUT          0       // Флаг таймаута между символами
+#define PACK_FLAG_RX_TIMEOUT          0       // Р¤Р»Р°Рі С‚Р°Р№РјР°СѓС‚Р° РјРµР¶РґСѓ СЃРёРјРІРѕР»Р°РјРё
 #define PACK_FLAG_IS_PROCESS          1
 
-//Таймер приема пакета
+//РўР°Р№РјРµСЂ РїСЂРёРµРјР° РїР°РєРµС‚Р°
 #define Pack_Recive_Timer_Init()      {core.flags |= (1<<PACK_FLAG_RX_TIMEOUT); core.timer = CORE_PACK_TIMEOUT;}
 #define Pack_Recive_Timer_Update()    {core.timer = CORE_PACK_TIMEOUT;}
 #define Pack_Recive_Timer_Clr()       {core.flags &= ~(1<<PACK_FLAG_RX_TIMEOUT); core.timer = 0;}
 #define Is_Pack_Recive_Flag_Set()     ((core.flags & (1<<PACK_FLAG_RX_TIMEOUT)) != 0)
 
-//Команды CLI
+//РљРѕРјР°РЅРґС‹ CLI
 #define CLI_CMD_W                               0
 #define CLI_CMD_R                               1
 #define CLI_CMD_E                               2
